@@ -1,0 +1,32 @@
+[
+  {
+    "screenId": "fallback-game-board",
+    "name": "Game Board",
+    "type": "play",
+    "description": "Playable main scene with the playfield, user-controlled entities, score/progress, status, and primary controls."
+  },
+  {
+    "screenId": "fallback-main-menu",
+    "name": "Main Menu",
+    "type": "menu",
+    "description": "Start, resume, restart, and any task-requested mode or difficulty actions."
+  },
+  {
+    "screenId": "fallback-pause-overlay",
+    "name": "Pause Overlay",
+    "type": "overlay",
+    "description": "Paused state with resume, restart, and return-to-menu actions."
+  },
+  {
+    "screenId": "fallback-game-over",
+    "name": "Game Over",
+    "type": "result",
+    "description": "Final score/progress summary, replay, and return-to-menu actions."
+  },
+  {
+    "screenId": "fallback-controls-help",
+    "name": "Controls Help",
+    "type": "help",
+    "description": "Task-requested keyboard/touch controls and concise rules."
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "screenId": "fallback-game-board",
+    "title": "Game Board",
+    "htmlFile": "fallback-game-board.html",
+    "deviceType": "DESKTOP",
+    "source": "local-fallback"
+  },
+  {
+    "screenId": "fallback-main-menu",
+    "title": "Main Menu",
+    "htmlFile": "fallback-main-menu.html",
+    "deviceType": "DESKTOP",
+    "source": "local-fallback"
+  },
+  {
+    "screenId": "fallback-pause-overlay",
+    "title": "Pause Overlay",
+    "htmlFile": "fallback-pause-overlay.html",
+    "deviceType": "DESKTOP",
+    "source": "local-fallback"
+  },
+  {
+    "screenId": "fallback-game-over",
+    "title": "Game Over",
+    "htmlFile": "fallback-game-over.html",
+    "deviceType": "DESKTOP",
+    "source": "local-fallback"
+  },
+  {
+    "screenId": "fallback-controls-help",
+    "title": "Controls Help",
+    "htmlFile": "fallback-controls-help.html",
+    "deviceType": "DESKTOP",
+    "source": "local-fallback"
+  }
+]

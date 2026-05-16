@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Over</title>
+  <style>
+    :root {
+      --color-background: #0b1020;
+      --color-surface: #151b2d;
+      --color-panel: #20283f;
+      --color-primary: #20e3b2;
+      --color-accent: #ffb86b;
+      --color-danger: #ff5c7a;
+      --color-text: #eef4ff;
+      --color-muted: #9ba8c7;
+      --font-heading: "Hanken Grotesk", "Segoe UI", sans-serif;
+      --font-body: "Hanken Grotesk", "Segoe UI", sans-serif;
+      --radius-card: 8px;
+      --spacing-unit: 8px;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: var(--color-background); color: var(--color-text); font-family: var(--font-body); }
+    header { display: flex; justify-content: space-between; gap: 24px; align-items: center; padding: 24px 32px; border-bottom: 1px solid rgba(255,255,255,.12); background: var(--color-surface); }
+    main { padding: 32px; display: grid; gap: 24px; }
+    h1, h2 { font-family: var(--font-heading); margin: 0; }
+    p { color: var(--color-muted); line-height: 1.55; }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; }
+    a, button { border-radius: 8px; font: inherit; }
+    a { color: var(--color-primary); text-decoration: none; padding: 8px 10px; border: 1px solid rgba(32,227,178,.25); }
+    button { border: 0; background: var(--color-primary); color: #04110d; padding: 10px 14px; font-weight: 700; cursor: pointer; }
+    button + button { background: var(--color-panel); color: var(--color-text); border: 1px solid rgba(255,255,255,.14); }
+    .meta { color: var(--color-muted); font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+    .game-layout { display: grid; grid-template-columns: minmax(260px, 420px) minmax(220px, 320px); gap: 24px; align-items: start; }
+    .board { aspect-ratio: 10 / 20; display: grid; grid-template-columns: repeat(10, 1fr); grid-template-rows: repeat(20, 1fr); gap: 2px; padding: 10px; background: #050814; border: 1px solid rgba(255,255,255,.18); border-radius: var(--radius-card); }
+    .cell, .mini-grid span { background: rgba(255,255,255,.08); border-radius: 2px; min-height: 8px; }
+    .cell.active, .mini-grid .active { background: var(--color-accent); box-shadow: 0 0 18px rgba(255,184,107,.35); }
+    .side-panel, .command-panel, .settings-panel, .result-panel { background: var(--color-surface); border: 1px solid rgba(255,255,255,.14); border-radius: var(--radius-card); padding: 20px; display: grid; gap: 16px; }
+    .mini-grid { width: 96px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; }
+    dl { display: grid; grid-template-columns: 1fr auto; gap: 8px 18px; margin: 0; }
+    dt { color: var(--color-muted); } dd { margin: 0; font-weight: 800; }
+    .settings-panel label { display: grid; gap: 6px; color: var(--color-muted); }
+    input, select { background: #080d19; border: 1px solid rgba(255,255,255,.18); border-radius: 8px; color: var(--color-text); padding: 10px; }
+    .action-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .data-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    article { background: var(--color-panel); border-radius: var(--radius-card); padding: 16px; }
+    @media (max-width: 720px) { header, main { padding: 18px; } .game-layout, .data-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body data-device="DESKTOP">
+  <header>
+    <div><div class="meta">Circuit Tiles PRD</div><h1>Game Over</h1><p>Final score/progress summary, replay, and return-to-menu actions.</p></div>
+    <nav aria-label="Fallback design navigation"><a href="#fallback-game-board">Game Board</a><a href="#fallback-main-menu">Main Menu</a><a href="#fallback-pause-overlay">Pause Overlay</a><a href="#fallback-game-over">Game Over</a><a href="#fallback-controls-help">Controls Help</a></nav>
+  </header>
+  <main id="fallback-game-over">
+      <section class="result-panel">
+        <p class="scoreline">Final score 24,800 with strong progress through the challenge.</p>
+        <button type="button">Restart</button><button type="button">Main Menu</button>
+      </section></main>
+</body>
+</html>

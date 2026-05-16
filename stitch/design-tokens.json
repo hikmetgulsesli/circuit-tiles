@@ -1,0 +1,23 @@
+{
+  "source": "local-fallback",
+  "colors": {
+    "background": "#0b1020",
+    "surface": "#151b2d",
+    "panel": "#20283f",
+    "primary": "#20e3b2",
+    "accent": "#ffb86b",
+    "danger": "#ff5c7a",
+    "text": "#eef4ff",
+    "muted": "#9ba8c7"
+  },
+  "fonts": {
+    "heading": "Inter, system-ui, sans-serif",
+    "body": "Inter, system-ui, sans-serif"
+  },
+  "radius": {
+    "card": "8px"
+  },
+  "spacing": {
+    "unit": "8px"
+  }
+}

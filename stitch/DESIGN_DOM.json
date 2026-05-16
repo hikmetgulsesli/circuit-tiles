@@ -1,0 +1,421 @@
+{
+  "generatedAt": "2026-05-16T12:20:46.862Z",
+  "screenCount": 5,
+  "screens": {
+    "fallback-game-board": {
+      "screenId": "fallback-game-board",
+      "title": "Game Board",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "main",
+          "layout": "grid",
+          "classes": [],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Start Game",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        },
+        {
+          "label": "Open Settings",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Controls Help",
+          "href": "#fallback-controls-help",
+          "classes": [],
+          "icon": null
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-primary": "#20e3b2"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 2
+      }
+    },
+    "fallback-main-menu": {
+      "screenId": "fallback-main-menu",
+      "title": "Main Menu",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "main",
+          "layout": "grid",
+          "classes": [],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Restart",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        },
+        {
+          "label": "Open Settings",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Controls Help",
+          "href": "#fallback-controls-help",
+          "classes": [],
+          "icon": null
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-primary": "#20e3b2"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1
+      }
+    },
+    "fallback-pause-overlay": {
+      "screenId": "fallback-pause-overlay",
+      "title": "Pause Overlay",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "main",
+          "layout": "grid",
+          "classes": [],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Restart",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        },
+        {
+          "label": "Open Settings",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Controls Help",
+          "href": "#fallback-controls-help",
+          "classes": [],
+          "icon": null
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-primary": "#20e3b2"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1
+      }
+    },
+    "fallback-game-over": {
+      "screenId": "fallback-game-over",
+      "title": "Game Over",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "main",
+          "layout": "grid",
+          "classes": [],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Restart",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        },
+        {
+          "label": "Open Settings",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Controls Help",
+          "href": "#fallback-controls-help",
+          "classes": [],
+          "icon": null
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-primary": "#20e3b2"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 2
+      }
+    },
+    "fallback-controls-help": {
+      "screenId": "fallback-controls-help",
+      "title": "Controls Help",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "main",
+          "layout": "grid",
+          "classes": [],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Restart",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        },
+        {
+          "label": "Open Settings",
+          "classes": [],
+          "icon": null,
+          "action": "click-action"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null
+        },
+        {
+          "label": "Controls Help",
+          "href": "#fallback-controls-help",
+          "classes": [],
+          "icon": null
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-primary": "#20e3b2"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1
+      }
+    }
+  }
+}
