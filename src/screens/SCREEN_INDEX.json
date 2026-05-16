@@ -1,0 +1,129 @@
+[
+  {
+    "screenId": "fallback-game-board",
+    "title": "Game Board",
+    "componentName": "GameBoard",
+    "file": "src/screens/GameBoard.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 5,
+    "actions": [
+      {
+        "id": "pause-1",
+        "kind": "button",
+        "label": "Pause",
+        "index": 0
+      },
+      {
+        "id": "restart-2",
+        "kind": "button",
+        "label": "Restart",
+        "index": 1
+      }
+    ]
+  },
+  {
+    "screenId": "fallback-main-menu",
+    "title": "Main Menu",
+    "componentName": "MainMenu",
+    "file": "src/screens/MainMenu.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 5,
+    "actions": [
+      {
+        "id": "start-game-1",
+        "kind": "button",
+        "label": "Start Game",
+        "index": 0
+      },
+      {
+        "id": "resume-2",
+        "kind": "button",
+        "label": "Resume",
+        "index": 1
+      },
+      {
+        "id": "open-settings-3",
+        "kind": "button",
+        "label": "Open Settings",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "screenId": "fallback-pause-overlay",
+    "title": "Pause Overlay",
+    "componentName": "PauseOverlay",
+    "file": "src/screens/PauseOverlay.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 5,
+    "actions": [
+      {
+        "id": "restart-1",
+        "kind": "button",
+        "label": "Restart",
+        "index": 0
+      },
+      {
+        "id": "main-menu-2",
+        "kind": "button",
+        "label": "Main Menu",
+        "index": 1
+      }
+    ]
+  },
+  {
+    "screenId": "fallback-game-over",
+    "title": "Game Over",
+    "componentName": "GameOver",
+    "file": "src/screens/GameOver.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 5,
+    "actions": [
+      {
+        "id": "restart-1",
+        "kind": "button",
+        "label": "Restart",
+        "index": 0
+      },
+      {
+        "id": "main-menu-2",
+        "kind": "button",
+        "label": "Main Menu",
+        "index": 1
+      }
+    ]
+  },
+  {
+    "screenId": "fallback-controls-help",
+    "title": "Controls Help",
+    "componentName": "ControlsHelp",
+    "file": "src/screens/ControlsHelp.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 5,
+    "actions": [
+      {
+        "id": "start-game-1",
+        "kind": "button",
+        "label": "Start Game",
+        "index": 0
+      },
+      {
+        "id": "resume-2",
+        "kind": "button",
+        "label": "Resume",
+        "index": 1
+      },
+      {
+        "id": "open-settings-3",
+        "kind": "button",
+        "label": "Open Settings",
+        "index": 2
+      }
+    ]
+  }
+]
