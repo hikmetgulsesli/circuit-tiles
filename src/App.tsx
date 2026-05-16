@@ -127,7 +127,9 @@ export default function App() {
                 </div>
               </dl>
 
-              <p className="mt-4 rounded-md border border-cyan-300/20 bg-cyan-300/10 p-3 text-sm text-cyan-50">{state.lastAction}</p>
+              <p aria-live="polite" className="mt-4 rounded-md border border-cyan-300/20 bg-cyan-300/10 p-3 text-sm text-cyan-50">
+                {state.lastAction}
+              </p>
 
               <div
                 className="mt-6 grid gap-2"
