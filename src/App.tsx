@@ -42,7 +42,9 @@ export default function App() {
       if (offset) {
         event.preventDefault();
         const next = state.board[selectedIndex + offset];
-        if (next) {
+        const isHorizontalMove = event.key === 'ArrowLeft' || event.key === 'ArrowRight';
+        const remainsInRow = !isHorizontalMove || next?.row === selected.row;
+        if (next && remainsInRow) {
           actions.selectTile(next.id);
         }
       }

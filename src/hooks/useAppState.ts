@@ -172,7 +172,13 @@ export function useAppState(): RuntimeBridge {
   }, []);
 
   const pauseGame = useCallback(() => {
-    setState((current) => ({ ...current, screen: 'paused', isPaused: true, lastAction: 'Paused' }));
+    setState((current) => {
+      if (current.screen !== 'playing') {
+        return current;
+      }
+
+      return { ...current, screen: 'paused', isPaused: true, lastAction: 'Paused' };
+    });
   }, []);
 
   const resumeGame = useCallback(() => {
