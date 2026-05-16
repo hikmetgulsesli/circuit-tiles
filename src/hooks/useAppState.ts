@@ -278,6 +278,16 @@ export function useAppState(): RuntimeBridge {
   useEffect(() => {
     window.app = bridge;
     globalThis.app = bridge;
+
+    return () => {
+      if (window.app === bridge) {
+        delete window.app;
+      }
+
+      if (globalThis.app === bridge) {
+        globalThis.app = undefined;
+      }
+    };
   }, [bridge]);
 
   return bridge;
