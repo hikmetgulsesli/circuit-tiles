@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.setfarm/
+.setfarm-bin/
+.worktrees/
+SUPERVISOR_MEMORY.md
+PROJECT_MEMORY.md
+CLAUDE.md
+references
