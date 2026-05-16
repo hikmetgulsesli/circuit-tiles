@@ -1,64 +1,100 @@
 {
-  "generatedAt": "2026-05-16T12:20:46.862Z",
+  "generatedAt": "2026-05-16T12:21:48.005Z",
   "screenCount": 5,
   "screens": {
-    "fallback-game-board": {
-      "screenId": "fallback-game-board",
-      "title": "Game Board",
+    "fallback-controls-help": {
+      "screenId": "fallback-controls-help",
       "materialSymbolsRequired": false,
       "sections": [
         {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
           "tag": "main",
-          "layout": "grid",
-          "classes": [],
-          "childCount": 3
+          "layout": "block",
+          "classes": [
+            "command-panel"
+          ],
+          "childCount": 5
         }
       ],
       "buttons": [
         {
+          "kind": "button",
           "label": "Start Game",
           "classes": [],
           "icon": null,
-          "action": "click-action"
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
         },
         {
+          "kind": "button",
+          "label": "Resume",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
           "label": "Open Settings",
           "classes": [],
           "icon": null,
-          "action": "click-action"
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
         }
       ],
       "inputs": [],
       "navLinks": [
         {
+          "kind": "link",
           "label": "Game Board",
           "href": "#fallback-game-board",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
         },
         {
+          "kind": "link",
           "label": "Main Menu",
           "href": "#fallback-main-menu",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
         },
         {
+          "kind": "link",
           "label": "Pause Overlay",
           "href": "#fallback-pause-overlay",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
         },
         {
+          "kind": "link",
           "label": "Game Over",
           "href": "#fallback-game-over",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
         },
         {
+          "kind": "link",
           "label": "Controls Help",
           "href": "#fallback-controls-help",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-controls-help"
         }
       ],
       "cards": [],
@@ -66,7 +102,17 @@
       "images": [],
       "cssVars": {
         "--color-background": "#0b1020",
-        "--color-primary": "#20e3b2"
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
       },
       "colorPalette": {
         "background": "#0b1020",
@@ -78,70 +124,190 @@
         "text": "#eef4ff",
         "muted": "#9ba8c7"
       },
-      "fonts": [
-        "Inter"
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "expectedBehavior": "navigate:#fallback-controls-help"
+        },
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Resume",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Open Settings",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
       ],
-      "layoutHints": {
-        "gridCols": 2
-      }
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "active": false
+        }
+      ],
+      "title": "Controls Help"
     },
-    "fallback-main-menu": {
-      "screenId": "fallback-main-menu",
-      "title": "Main Menu",
+    "fallback-game-board": {
+      "screenId": "fallback-game-board",
       "materialSymbolsRequired": false,
       "sections": [
         {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
           "tag": "main",
-          "layout": "grid",
-          "classes": [],
-          "childCount": 3
+          "layout": "block",
+          "classes": [
+            "game-layout"
+          ],
+          "childCount": 99
         }
       ],
       "buttons": [
         {
+          "kind": "button",
+          "label": "Pause",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
           "label": "Restart",
           "classes": [],
           "icon": null,
-          "action": "click-action"
-        },
-        {
-          "label": "Open Settings",
-          "classes": [],
-          "icon": null,
-          "action": "click-action"
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
         }
       ],
       "inputs": [],
       "navLinks": [
         {
+          "kind": "link",
           "label": "Game Board",
           "href": "#fallback-game-board",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
         },
         {
+          "kind": "link",
           "label": "Main Menu",
           "href": "#fallback-main-menu",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
         },
         {
+          "kind": "link",
           "label": "Pause Overlay",
           "href": "#fallback-pause-overlay",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
         },
         {
+          "kind": "link",
           "label": "Game Over",
           "href": "#fallback-game-over",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
         },
         {
+          "kind": "link",
           "label": "Controls Help",
           "href": "#fallback-controls-help",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-controls-help"
         }
       ],
       "cards": [],
@@ -149,7 +315,17 @@
       "images": [],
       "cssVars": {
         "--color-background": "#0b1020",
-        "--color-primary": "#20e3b2"
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
       },
       "colorPalette": {
         "background": "#0b1020",
@@ -161,153 +337,183 @@
         "text": "#eef4ff",
         "muted": "#9ba8c7"
       },
-      "fonts": [
-        "Inter"
-      ],
-      "layoutHints": {
-        "gridCols": 1
-      }
-    },
-    "fallback-pause-overlay": {
-      "screenId": "fallback-pause-overlay",
-      "title": "Pause Overlay",
-      "materialSymbolsRequired": false,
-      "sections": [
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
         {
-          "tag": "main",
-          "layout": "grid",
-          "classes": [],
-          "childCount": 3
-        }
-      ],
-      "buttons": [
-        {
-          "label": "Restart",
-          "classes": [],
-          "icon": null,
-          "action": "click-action"
-        },
-        {
-          "label": "Open Settings",
-          "classes": [],
-          "icon": null,
-          "action": "click-action"
-        }
-      ],
-      "inputs": [],
-      "navLinks": [
-        {
+          "kind": "link",
           "label": "Game Board",
-          "href": "#fallback-game-board",
-          "classes": [],
-          "icon": null
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
         },
         {
+          "kind": "link",
           "label": "Main Menu",
-          "href": "#fallback-main-menu",
-          "classes": [],
-          "icon": null
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
         },
         {
+          "kind": "link",
           "label": "Pause Overlay",
-          "href": "#fallback-pause-overlay",
-          "classes": [],
-          "icon": null
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
         },
         {
+          "kind": "link",
           "label": "Game Over",
-          "href": "#fallback-game-over",
-          "classes": [],
-          "icon": null
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
         },
         {
+          "kind": "link",
           "label": "Controls Help",
-          "href": "#fallback-controls-help",
-          "classes": [],
-          "icon": null
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "expectedBehavior": "navigate:#fallback-controls-help"
+        },
+        {
+          "kind": "button",
+          "label": "Pause",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Restart",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
         }
       ],
-      "cards": [],
-      "icons": [],
-      "images": [],
-      "cssVars": {
-        "--color-background": "#0b1020",
-        "--color-primary": "#20e3b2"
-      },
-      "colorPalette": {
-        "background": "#0b1020",
-        "surface": "#151b2d",
-        "panel": "#20283f",
-        "primary": "#20e3b2",
-        "accent": "#ffb86b",
-        "danger": "#ff5c7a",
-        "text": "#eef4ff",
-        "muted": "#9ba8c7"
-      },
-      "fonts": [
-        "Inter"
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "active": false
+        }
       ],
-      "layoutHints": {
-        "gridCols": 1
-      }
+      "title": "Game Board"
     },
     "fallback-game-over": {
       "screenId": "fallback-game-over",
-      "title": "Game Over",
       "materialSymbolsRequired": false,
       "sections": [
         {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
           "tag": "main",
-          "layout": "grid",
-          "classes": [],
-          "childCount": 3
+          "layout": "block",
+          "classes": [
+            "result-panel"
+          ],
+          "childCount": 1
         }
       ],
       "buttons": [
         {
+          "kind": "button",
           "label": "Restart",
           "classes": [],
           "icon": null,
-          "action": "click-action"
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
         },
         {
-          "label": "Open Settings",
+          "kind": "button",
+          "label": "Main Menu",
           "classes": [],
           "icon": null,
-          "action": "click-action"
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
         }
       ],
       "inputs": [],
       "navLinks": [
         {
+          "kind": "link",
           "label": "Game Board",
           "href": "#fallback-game-board",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
         },
         {
+          "kind": "link",
           "label": "Main Menu",
           "href": "#fallback-main-menu",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
         },
         {
+          "kind": "link",
           "label": "Pause Overlay",
           "href": "#fallback-pause-overlay",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
         },
         {
+          "kind": "link",
           "label": "Game Over",
           "href": "#fallback-game-over",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
         },
         {
+          "kind": "link",
           "label": "Controls Help",
           "href": "#fallback-controls-help",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-controls-help"
         }
       ],
       "cards": [],
@@ -315,7 +521,17 @@
       "images": [],
       "cssVars": {
         "--color-background": "#0b1020",
-        "--color-primary": "#20e3b2"
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
       },
       "colorPalette": {
         "background": "#0b1020",
@@ -327,70 +543,191 @@
         "text": "#eef4ff",
         "muted": "#9ba8c7"
       },
-      "fonts": [
-        "Inter"
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "expectedBehavior": "navigate:#fallback-controls-help"
+        },
+        {
+          "kind": "button",
+          "label": "Restart",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Main Menu",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
       ],
-      "layoutHints": {
-        "gridCols": 2
-      }
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "active": false
+        }
+      ],
+      "title": "Game Over"
     },
-    "fallback-controls-help": {
-      "screenId": "fallback-controls-help",
-      "title": "Controls Help",
+    "fallback-main-menu": {
+      "screenId": "fallback-main-menu",
       "materialSymbolsRequired": false,
       "sections": [
         {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
           "tag": "main",
-          "layout": "grid",
-          "classes": [],
-          "childCount": 3
+          "layout": "block",
+          "classes": [
+            "command-panel"
+          ],
+          "childCount": 5
         }
       ],
       "buttons": [
         {
-          "label": "Restart",
+          "kind": "button",
+          "label": "Start Game",
           "classes": [],
           "icon": null,
-          "action": "click-action"
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
         },
         {
+          "kind": "button",
+          "label": "Resume",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
           "label": "Open Settings",
           "classes": [],
           "icon": null,
-          "action": "click-action"
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
         }
       ],
       "inputs": [],
       "navLinks": [
         {
+          "kind": "link",
           "label": "Game Board",
           "href": "#fallback-game-board",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
         },
         {
+          "kind": "link",
           "label": "Main Menu",
           "href": "#fallback-main-menu",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
         },
         {
+          "kind": "link",
           "label": "Pause Overlay",
           "href": "#fallback-pause-overlay",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
         },
         {
+          "kind": "link",
           "label": "Game Over",
           "href": "#fallback-game-over",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
         },
         {
+          "kind": "link",
           "label": "Controls Help",
           "href": "#fallback-controls-help",
           "classes": [],
-          "icon": null
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-controls-help"
         }
       ],
       "cards": [],
@@ -398,7 +735,17 @@
       "images": [],
       "cssVars": {
         "--color-background": "#0b1020",
-        "--color-primary": "#20e3b2"
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
       },
       "colorPalette": {
         "background": "#0b1020",
@@ -410,12 +757,310 @@
         "text": "#eef4ff",
         "muted": "#9ba8c7"
       },
-      "fonts": [
-        "Inter"
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "expectedBehavior": "navigate:#fallback-controls-help"
+        },
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Resume",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Open Settings",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
       ],
-      "layoutHints": {
-        "gridCols": 1
-      }
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "active": false
+        }
+      ],
+      "title": "Main Menu"
+    },
+    "fallback-pause-overlay": {
+      "screenId": "fallback-pause-overlay",
+      "materialSymbolsRequired": false,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "meta"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "result-panel"
+          ],
+          "childCount": 1
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Restart",
+          "classes": [],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Main Menu",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "href": "#fallback-game-board",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "href": "#fallback-main-menu",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "href": "#fallback-pause-overlay",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "href": "#fallback-game-over",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "href": "#fallback-controls-help",
+          "classes": [],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#fallback-controls-help"
+        }
+      ],
+      "cards": [],
+      "icons": [],
+      "images": [],
+      "cssVars": {
+        "--color-background": "#0b1020",
+        "--color-surface": "#151b2d",
+        "--color-panel": "#20283f",
+        "--color-primary": "#20e3b2",
+        "--color-accent": "#ffb86b",
+        "--color-danger": "#ff5c7a",
+        "--color-text": "#eef4ff",
+        "--color-muted": "#9ba8c7",
+        "--font-heading": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--font-body": "\"Hanken Grotesk\", \"Segoe UI\", sans-serif",
+        "--radius-card": "8px",
+        "--spacing-unit": "8px"
+      },
+      "colorPalette": {
+        "background": "#0b1020",
+        "surface": "#151b2d",
+        "panel": "#20283f",
+        "primary": "#20e3b2",
+        "accent": "#ffb86b",
+        "danger": "#ff5c7a",
+        "text": "#eef4ff",
+        "muted": "#9ba8c7"
+      },
+      "fonts": [],
+      "layoutHints": {},
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "expectedBehavior": "navigate:#fallback-game-board"
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "expectedBehavior": "navigate:#fallback-main-menu"
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "expectedBehavior": "navigate:#fallback-pause-overlay"
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "expectedBehavior": "navigate:#fallback-game-over"
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "expectedBehavior": "navigate:#fallback-controls-help"
+        },
+        {
+          "kind": "button",
+          "label": "Restart",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Main Menu",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Game Board",
+          "icon": null,
+          "route": "#fallback-game-board",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Main Menu",
+          "icon": null,
+          "route": "#fallback-main-menu",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pause Overlay",
+          "icon": null,
+          "route": "#fallback-pause-overlay",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Game Over",
+          "icon": null,
+          "route": "#fallback-game-over",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Controls Help",
+          "icon": null,
+          "route": "#fallback-controls-help",
+          "active": false
+        }
+      ],
+      "title": "Pause Overlay"
     }
   }
 }
